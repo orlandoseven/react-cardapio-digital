@@ -1,0 +1,27 @@
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  font-size: 21px;
+}
+
+.categoria {
+  border-radius: 8px;
+  background-color: #080023;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+.categoria:hover,
+.categoria--selecionada {
+  background-color: #170063;
+  transition: background-color ease 200ms;
+}
+
+@media (max-width: 640px) {
+  .categorias {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

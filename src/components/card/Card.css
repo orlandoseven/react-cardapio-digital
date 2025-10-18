@@ -1,0 +1,25 @@
+.card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px 25px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.card__textos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__preco {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.card__img {
+  border-radius: 12px;
+  overflow: hidden;
+}
